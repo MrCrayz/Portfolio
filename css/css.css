@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: auto;
+    min-height: 100vh;
+    background: #191919;
+    font-family: sans-serif;
+}
+section{
+    max-height: 100vh;
+    min-height: 78vh;
+    padding: 10rem 9% 2rem;
+    margin-bottom: 2.5rem;
+}
+.header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 0.5rem 5%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    background: #1a1a1a;
+}
+#menu-icon{
+    font-size: 2.5rem;
+    color:#fff;
+    opacity: .7;
+    display: none;
+}
+.navbar{
+    list-style: none;
+    display: flex;
+}
+.logo{
+    color: #ffff;
+    opacity: 0.5;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    margin: 0 15px;
+    line-height: 80px;
+    transition: .5s;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar a{
+    color: #ffff;
+    opacity: 0.5;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    margin: 0 15px;
+    line-height: 80px;
+    transition: .5s;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar a.active,
+.navbar a:hover {
+    opacity: 1;
+    color: #8323ff;
+}
+
+.social-media i:hover{
+    background:#ddc2ff;
+    color: #8323ff;
+    box-shadow: 0 0 1rem #8323ff;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 1.4rem;
+    font-weight: 550;
+    color:#ffff;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color: #8323ff;
+}
+.home-content h1{
+    font-size: 4.5rem;
+    font-weight: 550;
+    line-height: 1.3;
+    color:#ffff;
+}
+.home-img img{
+    width: 35vw;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY();
+    }
+    50%{transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY();
+    }
+
+}
+
+
+.social-media i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: .2rem solid #8323ff;
+    border-radius: 50%;
+    font-size: 2.3rem;
+    color: #8323ff;
+    margin: 2rem 1.5rem 2rem 0;
+    transition: .5s ease;
+}
+.btn{
+    display: inline-flex;
+    padding: 1rem 2.4rem;
+    background: #8323ff;
+    box-shadow: 0 0 1rem #8323ff;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    transition: .5s ease;
+    border-radius: 2.5rem;
+    text-decoration: none;
+}
+.btn:hover{
+    box-shadow: none;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    background: #212121;
+    line-height: 1.5rem;
+}
+.about-img img{
+    width: 35vw;
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 0rem;
+    color: #fff;
+}
+.about-content h3{
+    font-size: 2.0rem;
+    color: #fff;
+}
+.about-content p{
+    font-size: 1rem;
+    margin: .5rem 0 2.1rem;
+    color: #fff;
+}
+.heading{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+.services h2{
+    margin-bottom: 1rem;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.services-container .services-box{
+    flex: 1 1 25rem;
+    background: #212121;
+    padding: 2rem 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #212121;
+    transition: .5s ease;
+}
+.services-container .services-box:hover{
+    border-color: #8323ff;
+    transform: scale(1.02);
+
+}
+.services-box i{
+    font-size: 5rem;
+    color: #8323ff;
+}
+.services-box h3{
+    font-size: 1.4rem;
+    color: #ffff;
+    opacity: .5;
+    margin-bottom: .5rem;
+}
+.contacts h2{
+    margin-bottom: 3rem;
+}
+.contacts form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contacts form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contacts form .input-box input,
+.contacts form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: .8rem;
+    color: #8323ff;
+    background: #212121;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contacts form .input-box input{
+    width: 49%;
+}
+.contacts form textarea{
+    resize: none;
+    cursor: pointer;
+}
+@media(max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px) {
+    html{
+        padding: 10rem 8% ;
+    }
+
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+    .services{
+        padding-bottom: 6rem;
+
+    }
+
+    .contacts{
+        min-height: auto;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media(max-width: 768px) {
+    #menu-icon{
+        display: flex;
+    }
+    .navbar {
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: .5rem 3%;
+        background: #212121;
+        border-top: .1rem solid #191919;
+        box-shadow: 0 .5rem 1rem #191919;
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: auto 
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-content h3{
+        font-size: 2.3rem;
+    }
+
+    .home-content h1{
+        font-size: 4rem;
+    }
+
+    .home-img img{
+        width: 60vw;
+        margin-top: 4rem;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .about img{
+        width: 60rem;
+        margin-top: 4rem;
+    }
+
+    .services h2{
+        margin-bottom: 2rem;
+    }
+
+}
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .contacts form .input-box input{
+        width: 80%;
+    }
+} 
